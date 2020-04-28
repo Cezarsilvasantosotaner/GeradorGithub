@@ -20,6 +20,7 @@ namespace GeradorGithub
         private static readonly string enderecoTemplateHtmlCard = @"C:\Users\olive\code\oliveira-michel.github.io\template-card.htm";
         private static readonly string[] enderecosArtigosMarkDown =
             new string[] {
+                @"C:\Users\olive\code\artigos\meugithubio\artigo.md",
                 @"C:\Users\olive\code\guias-api\design-rest-api\versionamento-insights.md",
                 @"C:\Users\olive\code\guias-api\guia-visual\rest-basico.md",
                 @"C:\Users\olive\code\guias-api\definindo-contratos-rest-api\guia.md",
@@ -113,6 +114,7 @@ namespace GeradorGithub
                         nomeArquivo = nomeArquivo.ToLower();
                         Regex.Replace(nomeArquivo, "[^0-9a-z]+", "");//remoção de caracteres especiais
                         nomeArquivo = nomeArquivo.Replace(" ", "-");
+                        nomeArquivo = nomeArquivo.Replace(":", "");
 
                         break;//interrompe busca, pois os metadados sempre vêm antes do título
                     }
