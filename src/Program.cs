@@ -20,6 +20,7 @@ namespace GeradorGithub
         private static readonly string enderecoTemplateHtmlCard = @"C:\Users\olive\code\oliveira-michel.github.io\template-card.htm";
         private static readonly string[] enderecosArtigosMarkDown =
             new string[] {
+                @"C:\Users\olive\code\artigos\cursorestbasico\artigo.md",
                 @"C:\Users\olive\code\artigos\jhulis\artigo.md",
                 @"C:\Users\olive\code\artigos\meugithubio\artigo.md",
                 @"C:\Users\olive\code\guias-api\design-rest-api\versionamento-insights.md",
